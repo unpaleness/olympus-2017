@@ -18,7 +18,7 @@
     </example>
     <example>
       <input>0-7xx70%wxw7--x-%w-0x</input>
-      <output>-7xx70%w</output>
+      <output>0%wxw7-</output>
     </example>
   </examples>
 </problem>
