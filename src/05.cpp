@@ -3,7 +3,7 @@
 #include <algorithm>
 using namespace std;
 
-int main(int argc, char *argv[])
+int main()
 {
     int N = 0;
     int W = 0;

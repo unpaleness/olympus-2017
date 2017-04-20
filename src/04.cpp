@@ -4,7 +4,6 @@
 using namespace std;
 
 int main() {
-    int y;
     int step = 0;
     int P = 0;
     string strin;
@@ -19,10 +18,10 @@ int main() {
     strout.clear();
 
     if (P == 1) {
-        for (int i = 0; i < strin.size(); i++) {
-            for (int j = 0; j < strAlf.size(); j++) {
+        for (size_t i = 0; i < strin.size(); i++) {
+            for (size_t j = 0; j < strAlf.size(); j++) {
                 if (strin[i] == strAlf[j]) {
-                    int smes = j + step;
+                    size_t smes = j + step;
                     if (smes >= strAlf.size()) {
                         smes = smes % strAlf.size();
                     }
@@ -35,13 +34,13 @@ int main() {
     if (P == 0) {
         strout = strin;
         strin = "";
-        for (int i = 0; i < strout.size(); i++) {
-            for (int j = 0; j < strAlf.size(); j++) {
+        for (size_t i = 0; i < strout.size(); i++) {
+            for (size_t j = 0; j < strAlf.size(); j++) {
                 if (strout[i] == strAlf[j]) {
                     int smes = j - step;
-                    if (smes < 0){
+                    if (smes < 0) {
                         if ((step-j) < strAlf.size()) {
-                           smes = strAlf.size() - (step - j);
+                            smes = strAlf.size() - (step - j);
                         } else {
                             smes = strAlf.size() - (step - j) % strAlf.size();
                         }
